@@ -3,17 +3,30 @@ const button = document.querySelector("#btn");
 const more = document.querySelector("#more");
 
 const dots = document.querySelector("#dots");
-
+var i = 0;
 function ReadMore(){
     // console.log("clicked Me")
-    if(dots.display === "none"){
-        dots.display = "inline";
-        btn.innerText = "Read More";
-        more.display = "none";
-    }else{
-        dots.display = "none";
+    if(!i){
+        
+        dots.style.display = "none";
+
+        more.style.display = "inline";
+
         button.innerText = "Read Less";
-        more.display = "inline";
+
+        i = 1;
+  
+        
+
+    }else{
+        dots.style.display = "inline";
+
+        button.innerText = "Read More";
+
+        more.style.display = "none";
+
+        i = 0;
+      
     }
 
 }
