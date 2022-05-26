@@ -1,35 +1,8 @@
-const button = document.querySelector("#btn");
+const button = document.querySelector("#read");
 
-const more = document.querySelector("#more");
-
-const dots = document.querySelector("#dots");
-var i = 0;
-function ReadMore(){
-    // console.log("clicked Me")
-    if(!i){
-        
-        dots.style.display = "none";
-
-        more.style.display = "inline";
-
-        button.innerText = "Read Less";
-
-        i = 1;
-  
-        
-
-    }else{
-        dots.style.display = "inline";
-
-        button.innerText = "Read More";
-
-        more.style.display = "none";
-
-        i = 0;
-      
-    }
-
-}
-
-
-button.addEventListener("click" , ReadMore);
+button.addEventListener("click", () => {
+  window.open(
+    "https://jayeshhande.hashnode.dev/javascript-in-the-browser-dom-and-events-fundamentals#heading-event-handler-attributes",
+    "_blank"
+  );
+});
